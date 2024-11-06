@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prelim Journey - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style>
+        .gradient-border {
+            position: relative;
+            background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+            background-size: 300% 300%;
+            animation: gradientBorder 12s ease infinite;
+        }
+
+        @keyframes gradientBorder {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-black/10 backdrop-blur-md border-b border-white/10 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-3xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">Lorenzo</a>
+                <div class="flex space-x-8">
+                    <a href="index.html" class="hover:text-indigo-400 transition-colors">Back to Portfolio</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-16 px-6">
+        <div class="container mx-auto">
+            <h1 class="text-6xl font-bold text-center mb-8 bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent" data-aos="fade-up">
+                Prelim Journey
+            </h1>
+            <div class="max-w-3xl mx-auto text-gray-300 space-y-6 text-lg leading-relaxed" data-aos="fade-up" data-aos-delay="100">
+                <p>
+                    During my Preliminary journey, the first thing I learned is Artificial Intelligence. I discovered what it's for, how it's applied in the industry and our daily lives, and what amazed me most—AI's ability for visual perception, like seeing and interpreting environments and even generating images from prompts, as in ChatGPT. Most of what we covered was about Natural Language Processing and Machine Learning. Machine learning, as I understand, is a type of AI that doesn't need a programmer to code every action; it can be told what to do in different scenarios. I learned that NLP lets computers understand human language, like words and sentences, so they can read, listen, and even talk back, like in voice assistants. NLP powers chatbots, translation apps, and spell-checkers, so it feels like they "get" what we're saying and can even entertain us when we're lonely.
+                </p>
+                <p>
+                    Prof. Raga explained text preprocessing steps, like lowercasing, removing special characters, and tokenizing words, which can feel tedious but is still fun. I also learned how to transform text into numbers, known as Text Representation - One Hot Encoding, which is useful if an algorithm shows bias. I got familiar with Named Entity Recognition (NER), which identifies things like names, places, and dates in text—something I find very useful. My favorite topic is text summarization, a widely used NLP task that feels mind-boggling. These are the topics that stood out the most to me so far.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Works & Activities -->
+    <section class="py-20 px-6">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent" data-aos="fade-up">
+                Works & Activities
+            </h2>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <!-- Activity 1 -->
+                <div class="group" data-aos="fade-up">
+                    <div class="gradient-border p-0.5 rounded-2xl">
+                        <div class="bg-gray-900 p-6 rounded-2xl h-full">
+                            <h3 class="text-2xl font-bold mb-4">Exercise 2 - NLP Text PreProcessing</h3>
+                            <p class="text-gray-300 mb-4">Explored Natural Language Processing techniques including text preprocessing, tokenization, and analysis using Python and NLTK library.</p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="px-3 py-1 bg-indigo-600/20 rounded-full text-sm border border-indigo-500/20">Python</span>
+                                <span class="px-3 py-1 bg-indigo-600/20 rounded-full text-sm border border-indigo-500/20">NLTK</span>
+                                <span class="px-3 py-1 bg-indigo-600/20 rounded-full text-sm border border-indigo-500/20">NLP</span>
+                            </div>
+                            <a href="exercise2.html" class="inline-flex items-center gap-2 text-indigo-400 hover:text-indigo-300 transition-colors">
+                                View Project
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Activity 2 -->
+                <div class="group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="gradient-border p-0.5 rounded-2xl">
+                        <div class="bg-gray-900 p-6 rounded-2xl h-full">
+                            <h3 class="text-2xl font-bold mb-4">Preliminary Exam</h3>
+                            <p class="text-gray-300 mb-4">Comprehensive examination covering AI concepts, Natural Language Processing, and Machine Learning fundamentals.</p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="px-3 py-1 bg-indigo-600/20 rounded-full text-sm border border-indigo-500/20">AI</span>
+                                <span class="px-3 py-1 bg-indigo-600/20 rounded-full text-sm border border-indigo-500/20">NLP</span>
+                                <span class="px-3 py-1 bg-indigo-600/20 rounded-full text-sm border border-indigo-500/20">Machine Learning</span>
+                            </div>
+                            <a href="preliminaryexam.html" class="inline-flex items-center gap-2 text-indigo-400 hover:text-indigo-300 transition-colors">
+                                View Project
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Activity 3 -->
+                <div class="group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="gradient-border p-0.5 rounded-2xl">
+                        <div class="bg-gray-900 p-6 rounded-2xl h-full">
+                            <h3 class="text-2xl font-bold mb-4">Prelim Asynchronous Activity</h3>
+                            <p class="text-gray-300 mb-4">Explored and implemented various AI concepts through hands-on exercises and practical applications in an asynchronous learning environment.</p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="px-3 py-1 bg-indigo-600/20 rounded-full text-sm border border-indigo-500/20">AI</span>
+                                <span class="px-3 py-1 bg-indigo-600/20 rounded-full text-sm border border-indigo-500/20">Async Learning</span>
+                                <span class="px-3 py-1 bg-indigo-600/20 rounded-full text-sm border border-indigo-500/20">Practical Applications</span>
+                            </div>
+                            <a href="prelimasync.html" class="inline-flex items-center gap-2 text-indigo-400 hover:text-indigo-300 transition-colors">
+                                View Project
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black/30 py-8">
+        <div class="container mx-auto px-6 text-center text-gray-400">
+            <p>&copy; 2024 Lorenzo. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+    </script>
+</body>
+</html> 

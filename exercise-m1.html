@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise M1 - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style>
+        .gradient-border {
+            position: relative;
+            background: linear-gradient(60deg, #ff6b6b, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad);
+            background-size: 300% 300%;
+            animation: gradientBorder 12s ease infinite;
+        }
+
+        @keyframes gradientBorder {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-black/10 backdrop-blur-md border-b border-white/10 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-3xl font-bold bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent">Lorenzo</a>
+                <div class="flex space-x-8">
+                    <a href="midterm.html" class="hover:text-pink-400 transition-colors">Back to Midterm Works</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-16 px-6">
+        <div class="container mx-auto">
+            <h1 class="text-6xl font-bold text-center mb-16 bg-gradient-to-r from-pink-400 via-purple-400 to-red-400 bg-clip-text text-transparent" data-aos="fade-up">
+                Exercise M1: Implementing NLP Application Models using Spacy
+            </h1>
+            <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+                <!-- Image Column -->
+                <div>
+                    <h2 class="text-3xl font-bold mb-6 flex items-center justify-between">
+                        <span class="bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">
+                            Implementation
+                        </span>
+                        <span class="flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 hover:bg-white/10 transition-colors">
+                            <svg class="w-5 h-5 text-pink-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <span class="text-xl text-gray-300">Grade: <span class="text-pink-400 font-semibold">70/100</span></span>
+                        </span>
+                    </h2>
+                    <div class="gradient-border p-0.5 rounded-2xl" data-aos="fade-right">
+                        <div class="bg-gray-900 p-2 rounded-2xl">
+                            <a href="https://drive.google.com/file/d/1QexV9D4SeZKlj8QVdjIQZ34GtC1oPZCR/view?usp=sharing" target="_blank">
+                                <img 
+                                    src="uploads/em1.png" 
+                                    alt="Exercise M1 Implementation" 
+                                    class="rounded-xl w-full hover:opacity-80 transition-opacity"
+                                >
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reflection Column -->
+                <div class="space-y-6" data-aos="fade-left">
+                    <h3 class="text-2xl font-bold bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">
+                        Personal Reflection
+                    </h3>
+                    <div class="bg-white/5 p-6 rounded-lg border border-white/10">
+                        <div class="text-gray-300 space-y-4 text-lg leading-relaxed">
+                            <p>
+                                In this exercise we were tasked to understand the process like how to load a blank model and add text classifier and etc. Being able to familiarize myself with the task, I was able to test the model which is the Spam vs Ham by feeding it with Spam and Ham email in text.
+                            </p>
+                            <p>
+                                Below, the Named Entity Recognition (NER) what it does is it classifies and categorize named entities like name of the people, locations, time, organizations and such. I was able to test it and it worked fine.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Peer Reviews Section -->
+    <section class="py-20 px-6 bg-black/30">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent" data-aos="fade-up">
+                Peer Reviews
+            </h2>
+            <div class="max-w-4xl mx-auto space-y-8">
+                <!-- Review 1 -->
+                <div class="gradient-border p-0.5 rounded-2xl" data-aos="fade-up">
+                    <div class="bg-gray-900 p-6 rounded-2xl">
+                        <div class="bg-white/5 p-6 rounded-lg border border-white/10">
+                            <p class="text-gray-300 mb-4 leading-relaxed">
+                                Using spaCy to evaluate Manabat's named entity recognition (NER) code, we can see that the function analyze_text extracts named entities and their accompanying labels by processing user-provided text. This function accepts a string of text as input, which may contain a variety of named entities. A list of tuples, each representing a detected object and its label (for example, "ORG" for organizations or "PERSON" for individuals), is the result. A pre-trained English model is loaded and the spaCy library is imported to start the code flow. The analyze_text function is then defined, using this model to extract entities and analyze the supplied text. The function is called and the output is shown once user input is received.
+                            </p>
+                            <p class="text-gray-300 leading-relaxed">
+                                Nevertheless, there are certain drawbacks to the implementation, such as the absence of contextual filtering, which could lead to incorrect classifications, especially when using uncommon or unclear terms. In spite of this, the code demonstrates how useful spaCy is for entity recognition tasks, which makes it useful in a variety of applications like content summarization, information extraction, and improving search features. Manabat's study demonstrates how spaCy can handle NER tasks in a basic way.
+                            </p>
+                            <p class="text-pink-400 mt-4 text-sm italic">- Anonymous User</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="gradient-border p-0.5 rounded-2xl" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-gray-900 p-6 rounded-2xl">
+                        <div class="bg-white/5 p-6 rounded-lg border border-white/10">
+                            <p class="text-gray-300 leading-relaxed">
+                                I looked at his work. He talks about how each part of the models works. He explains things well and give examples to try. It shows he thought a lot about the models. he does a great job.
+                            </p>
+                            <p class="text-pink-400 mt-4 text-sm italic">- Anonymous User</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="gradient-border p-0.5 rounded-2xl" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-gray-900 p-6 rounded-2xl">
+                        <div class="bg-white/5 p-6 rounded-lg border border-white/10">
+                            <p class="text-gray-300 mb-4 leading-relaxed">
+                                Mr. Manabat's Python notebook annotation is incomplete. It only includes markdowns for text classification and Named Entity Recognition. Also, the comments are not formatted appropriately, which can confuse. He also didn't follow the format specified in the instructions.
+                            </p>
+                            <p class="text-gray-300 mb-4 leading-relaxed">
+                                Regarding Manabat's annotations, he gave us an overview of every code line. It is helpful to give readers an idea of the code. I suggest that he follow the format, including function details (such as parameters and expected output), and accomplish his work thoroughly to improve the quality of his activity. For example, he can put the parameters for us to run the make_doc() function in the snippet. In this manner, we can comprehend what it wants to achieve.
+                            </p>
+                            <p class="text-gray-300 leading-relaxed">
+                                Overall, the work needs more improvement with the parts pointed out. I hope to see those enhancements in future activities within the subject.
+                            </p>
+                            <p class="text-pink-400 mt-4 text-sm italic">- Anonymous User</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 4 -->
+                <div class="gradient-border p-0.5 rounded-2xl" data-aos="fade-up" data-aos-delay="300">
+                    <div class="bg-gray-900 p-6 rounded-2xl">
+                        <div class="bg-white/5 p-6 rounded-lg border border-white/10">
+                            <p class="text-gray-300 leading-relaxed">
+                                incomplete work. processed only two models
+                            </p>
+                            <p class="text-pink-400 mt-4 text-sm italic">- Anonymous User</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black/30 py-8">
+        <div class="container mx-auto px-6 text-center text-gray-400">
+            <p>&copy; 2024 Lorenzo. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+    </script>
+</body>
+</html> 

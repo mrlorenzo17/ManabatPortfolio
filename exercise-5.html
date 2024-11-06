@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5 - BERT QnA System - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style>
+        .gradient-border {
+            position: relative;
+            background: linear-gradient(60deg, #ff6b6b, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad);
+            background-size: 300% 300%;
+            animation: gradientBorder 12s ease infinite;
+        }
+
+        @keyframes gradientBorder {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-black/10 backdrop-blur-md border-b border-white/10 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-3xl font-bold bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent">Lorenzo</a>
+                <div class="flex space-x-8">
+                    <a href="midterm.html" class="hover:text-pink-400 transition-colors">Back to Midterm Works</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-16 px-6">
+        <div class="container mx-auto">
+            <h1 class="text-6xl font-bold text-center mb-16 bg-gradient-to-r from-pink-400 via-purple-400 to-red-400 bg-clip-text text-transparent" data-aos="fade-up">
+                Exercise 5: BERT-based Question & Answer System
+            </h1>
+            <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+                <!-- Implementation Column -->
+                <div>
+                    <h2 class="text-3xl font-bold mb-6 flex items-center justify-between">
+                        <span class="bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">
+                            Document
+                        </span>
+                        <span class="flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 hover:bg-white/10 transition-colors">
+                            <svg class="w-5 h-5 text-pink-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <span class="text-xl text-gray-300">Grade: <span class="text-pink-400 font-semibold">85/100</span></span>
+                        </span>
+                    </h2>
+                    <div class="gradient-border p-0.5 rounded-2xl" data-aos="fade-right">
+                        <div class="bg-gray-900 p-2 rounded-2xl">
+                            <iframe 
+                                src="https://docs.google.com/document/d/1ObI0ks6N1aeYAM_aUM5SC8WtCQ1Bcwv7/preview" 
+                                class="w-full h-[800px] md:h-[700px] lg:h-[800px] rounded-xl"
+                                frameborder="0"
+                                allowfullscreen
+                                style="zoom: 0.75;"
+                            ></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reflection Column -->
+                <div class="space-y-6" data-aos="fade-left">
+                    <h3 class="text-2xl font-bold bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">
+                        Personal Reflection
+                    </h3>
+                    <div class="bg-white/5 p-6 rounded-lg border border-white/10">
+                        <div class="text-gray-300 space-y-4 text-lg leading-relaxed">
+                            <p>
+                                This exercise presents a evaluation of four pre-trained question answering (Q&A) models on real-world. Using a given article and the training data for each models. I used BERT-cased-squad2, DistilBERT, Roberta, and BERT-base-uncased-squad2. Each models performed differently but the model that stand out the most was the BERT-case-squad2. With whopping 80% accuracy with 8 correct answers, 2 incorrect answers that is done using google colab jupyter notebook.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="py-20 px-6 bg-black/30">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent" data-aos="fade-up">
+                Results & Analysis
+            </h2>
+            <div class="max-w-4xl mx-auto space-y-8">
+                <!-- Model Comparison -->
+                <div class="gradient-border p-0.5 rounded-2xl" data-aos="fade-up">
+                    <div class="bg-gray-900 p-6 rounded-2xl">
+                        <h3 class="text-2xl font-bold mb-4 bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">
+                            Model Comparison
+                        </h3>
+                        <div class="bg-white/5 p-6 rounded-lg border border-white/10">
+                            <iframe 
+                                src="https://docs.google.com/spreadsheets/d/1-yoeagkowgjNcF5M5WlgCWYICG_E1Uy2/preview" 
+                                class="w-full h-[600px] rounded-xl"
+                                frameborder="0"
+                            ></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jupyter Notebook -->
+                <div class="gradient-border p-0.5 rounded-2xl" data-aos="fade-up">
+                    <div class="bg-gray-900 p-6 rounded-2xl">
+                        <h3 class="text-2xl font-bold mb-4 bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">
+                            Implementation Notebook
+                        </h3>
+                        <div class="bg-white/5 p-6 rounded-lg border border-white/10">
+                            <a href="https://drive.google.com/file/d/16n2LmJjMa3nQv3C56brfmHTr5_80NauO/view?usp=sharing" target="_blank" class="block">
+                                <img 
+                                    src="uploads/e5.png" 
+                                    alt="Jupyter Notebook Preview" 
+                                    class="w-full h-auto rounded-lg hover:opacity-80 transition-opacity"
+                                />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Peer Reviews -->
+                <div class="gradient-border p-0.5 rounded-2xl" data-aos="fade-up">
+                    <div class="bg-gray-900 p-6 rounded-2xl">
+                        <h3 class="text-2xl font-bold mb-4 bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">
+                            Peer Reviews
+                        </h3>
+                        <!-- Review 1 -->
+                        <div class="bg-white/5 p-6 rounded-lg border border-white/10 mb-4">
+                            <p class="text-gray-300 leading-relaxed">
+                                Based on my review of Mr. Manabat's paper, the first thing I noticed is that his abstract is good, but what he wants to convey is complete. Then the introduction is okay, but the introduction seems to have similarities, I don't know if it's just me, but it seems like the paper I checked has similarities with the other one's I checked, but it's okay because we're only on the same topic, so it would be nice if you had related literature right away...
+                            </p>
+                            <p class="text-gray-300 leading-relaxed mt-4">
+                                I noticed that you have references, but I didn't see them in the paper, I don't know which part you used them in. I hope you use them in the next take note that it should be important that you put the related literature in your work because that is a big help so that you have a back up...
+                            </p>
+                            <p class="text-pink-400 mt-4 text-sm italic">- Anonymous User</p>
+                        </div>
+
+                        <!-- Review 2 -->
+                        <div class="bg-white/5 p-6 rounded-lg border border-white/10 mb-4">
+                            <p class="text-gray-300 leading-relaxed">
+                                This paper made by Mr. Manabat presents an impressive evaluation of four pre-trained question-answering (Q&A) models in the context of the repatriation of overseas Filipino workers from Beirut, Lebanon. The methodology is laid out, detailing the models used, the dataset, and the evaluation metrics, which allows me to understand how the study was conducted and to replicate the experiment if I desire...
+                            </p>
+                            <p class="text-gray-300 leading-relaxed mt-4">
+                                However, it lacks detailed information on the fine-tuning process of the models provided, which is important for understanding their performance. Also, there was no citation in the introduction section that is related to the topic of the paper...
+                            </p>
+                            <p class="text-pink-400 mt-4 text-sm italic">- Anonymous User</p>
+                        </div>
+
+                        <!-- Review 3 -->
+                        <div class="bg-white/5 p-6 rounded-lg border border-white/10">
+                            <p class="text-gray-300 leading-relaxed">
+                                In Mr. Manabat's work, in his ipynb file, the provided model in the exercise was used correctly and even break down sections of the code to further explain what the code is for and what the code does, but he did not explain what is happening during the process, it's all about explaining what the code is about...
+                            </p>
+                            <p class="text-gray-300 leading-relaxed mt-4">
+                                His discussion is lacking something like, he mentioned that "larger models like BERT-cased-squad2 and roberta-base-squad2 generally outperform smaller models like DistilBERT in terms of accuracy and confidence" he doesn't provide a concrete explanation of how this affects real-world applications...
+                            </p>
+                            <p class="text-pink-400 mt-4 text-sm italic">- Anonymous User</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black/30 py-8">
+        <div class="container mx-auto px-6 text-center text-gray-400">
+            <p>&copy; 2024 YourName. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+    </script>
+</body>
+</html> 

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midterm Exam - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style>
+        .gradient-border {
+            position: relative;
+            background: linear-gradient(60deg, #ff6b6b, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad);
+            background-size: 300% 300%;
+            animation: gradientBorder 12s ease infinite;
+        }
+
+        @keyframes gradientBorder {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-black/10 backdrop-blur-md border-b border-white/10 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-3xl font-bold bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent">Lorenzo</a>
+                <div class="flex space-x-8">
+                    <a href="midterm.html" class="hover:text-pink-400 transition-colors">Back to Midterm Works</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-16 px-6">
+        <div class="container mx-auto">
+            <h1 class="text-6xl font-bold text-center mb-8 bg-gradient-to-r from-pink-400 via-purple-400 to-red-400 bg-clip-text text-transparent" data-aos="fade-up">
+                Midterm Examination
+            </h1>
+            <div class="max-w-3xl mx-auto text-gray-300 space-y-6 text-lg leading-relaxed" data-aos="fade-up" data-aos-delay="100">
+                <p>
+                    In this midterm examination, I will cover a comprehensive range of topics related to NLP applications and models. The main focus will be on evaluating the performance of various NLP models and understanding their implications in real-world scenarios.
+                </p>
+                <p>
+                    Key aspects covered in this examination:
+                </p>
+                <ul class="list-disc pl-6 space-y-2">
+                    <li>Evaluation metrics for NLP models</li>
+                    <li>Comparison of different NLP models</li>
+                    <li>Real-world applications of NLP models</li>
+                    <li>Challenges and limitations of NLP models</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Code Examples Section -->
+    <section class="py-20 px-6">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent" data-aos="fade-up">
+                Implementation Examples
+            </h2>
+            <div class="max-w-3xl mx-auto space-y-8">
+                <div class="gradient-border p-0.5 rounded-2xl" data-aos="fade-up">
+                    <div class="bg-gray-900 p-6 rounded-2xl">
+                        <h3 class="text-2xl font-bold mb-4">Basic spaCy Usage</h3>
+                        <pre class="bg-black/50 p-4 rounded-lg overflow-x-auto"><code class="text-sm text-gray-300">
+import spacy
+
+# Load English language model
+nlp = spacy.load("en_core_web_sm")
+
+# Process text
+text = "Apple is looking at buying U.K. startup for $1 billion"
+doc = nlp(text)
+
+# Named Entity Recognition
+for ent in doc.ents:
+    print(f"Entity: {ent.text}, Label: {ent.label_}")
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="py-20 px-6 bg-black/30">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent" data-aos="fade-up">
+                Results & Learnings
+            </h2>
+            <div class="max-w-3xl mx-auto text-gray-300 space-y-6 text-lg leading-relaxed" data-aos="fade-up">
+                <p>
+                    Through this examination, I gained practical experience in:
+                </p>
+                <ul class="list-disc pl-6 space-y-2">
+                    <li>Understanding the core concepts of NLP</li>
+                    <li>Implementing spaCy in real-world scenarios</li>
+                    <li>Processing and analyzing text data efficiently</li>
+                    <li>Working with pre-trained language models</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black/30 py-8">
+        <div class="container mx-auto px-6 text-center text-gray-400">
+            <p>&copy; 2024 Lorenzo. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+    </script>
+</body>
+</html> 

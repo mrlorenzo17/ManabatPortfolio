@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise M1.1 - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style>
+        .gradient-border {
+            position: relative;
+            background: linear-gradient(60deg, #ff6b6b, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad);
+            background-size: 300% 300%;
+            animation: gradientBorder 12s ease infinite;
+        }
+
+        @keyframes gradientBorder {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-black/10 backdrop-blur-md border-b border-white/10 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-3xl font-bold bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent">Lorenzo</a>
+                <div class="flex space-x-8">
+                    <a href="midterm.html" class="hover:text-pink-400 transition-colors">Back to Midterm Works</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-16 px-6">
+        <div class="container mx-auto">
+            <h1 class="text-6xl font-bold text-center mb-16 bg-gradient-to-r from-pink-400 via-purple-400 to-red-400 bg-clip-text text-transparent" data-aos="fade-up">
+                Exercise M1.1: Evaluating NLP Model Performance
+            </h1>
+            <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+                <!-- Image Column -->
+                <div>
+                    <h2 class="text-3xl font-bold mb-6 flex items-center justify-between">
+                        <span class="bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">
+                            Document
+                        </span>
+                        <span class="flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 hover:bg-white/10 transition-colors">
+                            <svg class="w-5 h-5 text-pink-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <span class="text-xl text-gray-300">Grade: <span class="text-pink-400 font-semibold">75/100</span></span>
+                        </span>
+                    </h2>
+                    <div class="gradient-border p-0.5 rounded-2xl" data-aos="fade-right">
+                        <div class="bg-gray-900 p-2 rounded-2xl">
+                            <iframe 
+                                src="https://docs.google.com/document/d/1bnWmpYIooqJBjVCO4eLeoSsBNdPU8NeA/preview" 
+                                class="w-full h-[800px] md:h-[700px] lg:h-[800px] rounded-xl"
+                                frameborder="0"
+                                allowfullscreen
+                                style="zoom: 0.75;"
+                            ></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reflection Column -->
+                <div class="space-y-6" data-aos="fade-left">
+                    <h3 class="text-2xl font-bold bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">
+                        Personal Reflection
+                    </h3>
+                    <div class="bg-white/5 p-6 rounded-lg border border-white/10">
+                        <div class="text-gray-300 space-y-4 text-lg leading-relaxed">
+                            <p>
+                                In this exercise, we were task to train various NLP models and evaluate their performance based on different amounts and quality of training data that where the results are recorded in an excel sheet. For the model I used nlp = spacy.load("en_core_web_sm"), using the datasets i created that is split into several subset like:
+                            </p>
+                            <ul class="list-disc pl-6 space-y-2">
+                                <li>Subset 1: Small size, low-quality (minimal preprocessing)</li>
+                                <li>Subset 2: Medium size, low-quality</li>
+                                <li>Subset 3: Large size, low-quality</li>
+                                <li>Subset 4: Small size, high-quality (proper preprocessing and cleaning)</li>
+                                <li>Subset 5: Large size, high-quality</li>
+                            </ul>
+                            <p>
+                                Recording the accuracy, precision, recall, and F1 score for each model and data subset. The results for each are recorded in excel sheets.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="py-20 px-6 bg-black/30">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent" data-aos="fade-up">
+                Model Evaluation Results
+            </h2>
+            <div class="max-w-6xl mx-auto space-y-12">
+                <!-- NER Results -->
+                <div class="gradient-border p-0.5 rounded-2xl" data-aos="fade-up">
+                    <div class="bg-gray-900 p-4 rounded-2xl">
+                        <h3 class="text-2xl font-bold mb-4 bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">NER Results</h3>
+                        <iframe 
+                            src="https://docs.google.com/spreadsheets/d/1P0KfvennAvaocjehCvnypk8TV30tmnJe/preview" 
+                            class="w-full h-[400px] rounded-xl"
+                            frameborder="0"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+
+                <!-- POS Tagging Results -->
+                <div class="gradient-border p-0.5 rounded-2xl" data-aos="fade-up">
+                    <div class="bg-gray-900 p-4 rounded-2xl">
+                        <h3 class="text-2xl font-bold mb-4 bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">POS Tagging Results</h3>
+                        <iframe 
+                            src="https://docs.google.com/spreadsheets/d/1M2cDWo7iNF8ZPTsybSTtuekEdufWieYK/preview" 
+                            class="w-full h-[400px] rounded-xl"
+                            frameborder="0"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+
+                <!-- Sentiment Analysis Results -->
+                <div class="gradient-border p-0.5 rounded-2xl" data-aos="fade-up">
+                    <div class="bg-gray-900 p-4 rounded-2xl">
+                        <h3 class="text-2xl font-bold mb-4 bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">Sentiment Analysis Results</h3>
+                        <iframe 
+                            src="https://docs.google.com/spreadsheets/d/1gvAGFqZsf8uTme-ncoDcqXVjoZqEhlWR/preview" 
+                            class="w-full h-[400px] rounded-xl"
+                            frameborder="0"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Analysis -->
+    <section class="py-20 px-6">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent" data-aos="fade-up">
+                Results Analysis
+            </h2>
+            <div class="max-w-4xl mx-auto space-y-8">
+                <!-- NER Analysis -->
+                <div class="gradient-border p-0.5 rounded-2xl" data-aos="fade-up">
+                    <div class="bg-gray-900 p-6 rounded-2xl">
+                        <h3 class="text-2xl font-bold mb-4 bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">
+                            Named Entity Recognition (NER)
+                        </h3>
+                        <div class="bg-white/5 p-6 rounded-lg border border-white/10">
+                            <p class="text-gray-300 leading-relaxed">
+                                The spaCy NER model showed strong performance, hitting near-perfect scores (precision, recall, F1-score close to 1.0) on most subsets, no matter the data size or quality. This shows the model's skill in handling named entity recognition, even with small or noisy data. Strangely, there was a bit of a performance drop with the big, high-quality dataset, which could mean overfitting or trouble dealing with the complexity of a large, very clean dataset.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- POS Analysis -->
+                <div class="gradient-border p-0.5 rounded-2xl" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-gray-900 p-6 rounded-2xl">
+                        <h3 class="text-2xl font-bold mb-4 bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">
+                            Part-of-Speech (POS) Tagging
+                        </h3>
+                        <div class="bg-white/5 p-6 rounded-lg border border-white/10">
+                            <p class="text-gray-300 leading-relaxed">
+                                The spaCy POS tagging model had high scores in accuracy, precision, recall, and F1-score, mostly above 0.90 across all subsets. This confirms it does POS tagging well, even with smaller or messier data. Performance hit its highest with the big, clean dataset, showing that more and better data really helps.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sentiment Analysis -->
+                <div class="gradient-border p-0.5 rounded-2xl" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-gray-900 p-6 rounded-2xl">
+                        <h3 class="text-2xl font-bold mb-4 bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">
+                            Sentiment Analysis
+                        </h3>
+                        <div class="bg-white/5 p-6 rounded-lg border border-white/10">
+                            <p class="text-gray-300 leading-relaxed">
+                                The sentiment analysis model acted unexpectedly, with scores that jumped around. While it got perfect scores on some subsets, it totally missed on others, scoring zero in precision, recall, and F1-score. This might be due to things like class imbalance in the datasets, limits of the simple bag-of-words approach, or issues in the manually created data.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Peer Reviews Section -->
+    <section class="py-20 px-6 bg-black/30">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent" data-aos="fade-up">
+                Peer Reviews
+            </h2>
+            <div class="max-w-4xl mx-auto space-y-8">
+                <!-- Review 1 -->
+                <div class="gradient-border p-0.5 rounded-2xl" data-aos="fade-up">
+                    <div class="bg-gray-900 p-6 rounded-2xl">
+                        <div class="bg-white/5 p-6 rounded-lg border border-white/10">
+                            <p class="text-gray-300 leading-relaxed">
+                                So looking over this work, the first thing I notice is there's no any python code or an ipynb file uploaded. The paper explains that clean high-quality data can sometimes be more helpful than using lots of messy data, which is a good point. the sentiment analysis part did not perform well ended up with weird results, probably needed a better techniques or different types of data. Another thing that the study states bigger datasets don't always help but keeps repeating that without giving any new information. Some parts could be shorter, like the discussion on NER and POS tagging, which are described in a similar way. The study is pretty well-arranged, but adding some graphs or charts showing how the models performed would make it much easier to understand. While some of the work has good points, but in terms of results for the sentiment analysis, may be enhanced and some parts may be improved.
+                            </p>
+                            <p class="text-pink-400 mt-4 text-sm italic">- Anonymous User</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="gradient-border p-0.5 rounded-2xl" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-gray-900 p-6 rounded-2xl">
+                        <div class="bg-white/5 p-6 rounded-lg border border-white/10">
+                            <p class="text-gray-300 leading-relaxed">
+                                paper is too brief to be complete
+                            </p>
+                            <p class="text-pink-400 mt-4 text-sm italic">- Anonymous User</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="gradient-border p-0.5 rounded-2xl" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-gray-900 p-6 rounded-2xl">
+                        <div class="bg-white/5 p-6 rounded-lg border border-white/10">
+                            <p class="text-gray-300 leading-relaxed">
+                                no notebook submitted
+                            </p>
+                            <p class="text-pink-400 mt-4 text-sm italic">- Anonymous User</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black/30 py-8">
+        <div class="container mx-auto px-6 text-center text-gray-400">
+            <p>&copy; 2024 Lorenzo. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+    </script>
+</body>
+</html> 
