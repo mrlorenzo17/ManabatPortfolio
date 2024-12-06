@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style>
+        .gradient-border {
+            position: relative;
+            background: linear-gradient(60deg, #ff4d4d, #f73859, #ff8a5c, #ea4c89, #c56cf0);
+            background-size: 300% 300%;
+            animation: gradientBorder 12s ease infinite;
+        }
+
+        @keyframes gradientBorder {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-black/10 backdrop-blur-md border-b border-white/10 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-3xl font-bold bg-gradient-to-r from-red-600 to-pink-600 bg-clip-text text-transparent">Lorenzo</a>
+                <div class="flex space-x-8">
+                    <a href="finals.html" class="hover:text-red-400 transition-colors">Back to Finals</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-16 px-6">
+        <div class="container mx-auto">
+            <h1 class="text-6xl font-bold text-center mb-8 bg-gradient-to-r from-red-400 via-pink-400 to-orange-400 bg-clip-text text-transparent" data-aos="fade-up">
+                Building Chatbots with Hugging Face
+            </h1>
+            <div class="grid md:grid-cols-2 gap-8 max-w-7xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                <!-- Document Section with Grade -->
+                <div>
+                    <h2 class="text-3xl font-bold mb-6 flex items-center justify-between">
+                        <span class="bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">
+                            Document
+                        </span>
+                        <span class="flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 hover:bg-white/10 transition-colors">
+                            <svg class="w-5 h-5 text-pink-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <span class="text-xl text-gray-300">Grade: <span class="text-pink-400 font-semibold">N/A</span></span>
+                        </span>
+                    </h2>
+                    <div class="gradient-border p-0.5 rounded-2xl" data-aos="fade-right">
+                        <div class="bg-gray-900 p-2 rounded-2xl">
+                            <iframe 
+                                src="https://docs.google.com/document/d/1LMrBiq7liGq9mlYZ7Q9MMYvq5FGabzVO/preview" 
+                                class="w-full h-[800px] md:h-[700px] lg:h-[800px] rounded-xl"
+                                frameborder="0"
+                                allowfullscreen
+                                style="zoom: 0.75;"
+                            ></iframe>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Personal Reflection -->
+                <div>
+                    <h2 class="text-2xl font-bold mb-6 text-pink-400">Personal Reflection</h2>
+                    <div class="bg-gray-800/30 p-8 rounded-lg border border-white/10">
+                        <div class="space-y-4 text-gray-300">
+                            <p>Finally, as we neared the end of our final project, we put together all of the work we had done throughout the semester. Each team member had a specific role, and we gathered all of the files submitted throughout the semester, from the initial proposal to the methodologies we implemented. My role was that of the <strong>Model Specialist</strong>, while my teammates took on roles as the <strong>Data Specialist</strong> and the <strong>Evaluation Specialist</strong>. This division of roles ensured that everyone contributed uniquely to the project's success.
+
+                                As a Model Specialist, part of the job was finding the correct model and fine-tuning that for implementation as a backbone of the whole project. The Data Specialist then preprocessed datasets such that the data were applicable for usage in models developed, whereas the Evaluation Specialist found techniques to assess both accuracy and relevance in the output given by us. Collectively, this created a systematic process from start to end.
+
+                                Once all the separate components were finalized, we began integrating them into a functioning system. We applied all the methodologies and models set out in our research proposal using <strong>Google Colab</strong>. This allowed for real-time testing of the implementation, streamlined collaboration, and utilization of its computing resources for model training and evaluation, among other things. Following the plan in our proposal, we utilized pre-trained models such as <strong>T5-large</strong>, <strong>DistilBERT</strong>, and <strong>Facebook CNN</strong> for summarization and content analysis tasks.
+
+                                To drive the project further, I included extra models to test them for further comparison of their performances and enlarging the scope of our findings. It was in this iterative manner that we perfected our approaches so that the system was working perfectly for all possible scenarios. Integration was tough and also very rewarding since we could implement everything that we researched and designed into a workable solution.
+
+                                The final touch was really a source of pride, from seeing the hard work come to life in a working system rather than merely fulfilling the academic requirements. The project reminded everyone of the power of teamwork and added how expertise could contribute to a greater whole, making the end of our finals journey truly fulfilling.</p>
+                        </div>
+                    </div>
+                </div>>
+    </section>
+
+    <!-- Jupyter Notebook Section -->
+    <section class="py-16 px-6">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-red-400 to-pink-400 bg-clip-text text-transparent" data-aos="fade-up">
+                Jupyter Notebook
+            </h2>
+            <div class="gradient-border p-0.5 rounded-2xl max-w-5xl mx-auto" data-aos="fade-up">
+                <div class="bg-gray-900 p-2 rounded-2xl">
+                    <a href="https://drive.google.com/file/d/1NaBYwpnitvS8xEUYnYDy-6LSF0gs34LL/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                        <img src="uploads/shiminet.png" alt="Jupyter Notebook" class="w-full rounded-xl hover:opacity-90 transition-opacity">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results and Evaluation Section -->
+    <section class="py-16 px-6 bg-black/30">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-red-400 to-pink-400 bg-clip-text text-transparent" data-aos="fade-up">
+                Results and Evaluation
+            </h2>
+            <!-- Experimental Data -->
+            <div class="gradient-border p-0.5 rounded-2xl max-w-5xl mx-auto mb-8" data-aos="fade-up">
+                <div class="bg-gray-900 p-2 rounded-2xl">
+                    <h3 class="text-2xl font-bold mb-4 text-pink-400 px-4">Experimental Data</h3>
+                    <iframe 
+                        src="https://docs.google.com/spreadsheets/d/17TUfZYNiDlhOkNIjQXMbej5NB1jflw0F/preview"
+                        class="w-full h-[600px] rounded-xl"
+                        frameborder="0"
+                        allowfullscreen
+                    ></iframe>
+                </div>
+            </div>
+            
+            <!-- Experimental Results -->
+            <div class="gradient-border p-0.5 rounded-2xl max-w-5xl mx-auto" data-aos="fade-up">
+                <div class="bg-gray-900 p-2 rounded-2xl">
+                    <h3 class="text-2xl font-bold mb-4 text-pink-400 px-4">Experimental Results</h3>
+                    <iframe 
+                        src="https://docs.google.com/spreadsheets/d/1wpEUU6mxjshlju3cPxouI4m2GCv5DQdf/preview"
+                        class="w-full h-[600px] rounded-xl"
+                        frameborder="0"
+                        allowfullscreen
+                    ></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-black/30 py-8">
+        <div class="container mx-auto px-6 text-center text-gray-400">
+            <p>&copy; 2024 Lorenzo. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+    </script>
+</body>
+</html> 

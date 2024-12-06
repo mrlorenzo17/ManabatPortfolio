@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise F1: Building Chatbots - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style>
+        .gradient-border {
+            position: relative;
+            background: linear-gradient(60deg, #ff4d4d, #f73859, #ff8a5c, #ea4c89, #c56cf0);
+            background-size: 300% 300%;
+            animation: gradientBorder 12s ease infinite;
+        }
+
+        @keyframes gradientBorder {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-black/10 backdrop-blur-md border-b border-white/10 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-3xl font-bold bg-gradient-to-r from-red-600 to-pink-600 bg-clip-text text-transparent">Lorenzo</a>
+                <div class="flex space-x-8">
+                    <a href="finals.html" class="hover:text-red-400 transition-colors">Back to Finals</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-16 px-6">
+        <div class="container mx-auto">
+            <h1 class="text-6xl font-bold text-center mb-8 bg-gradient-to-r from-red-400 via-pink-400 to-orange-400 bg-clip-text text-transparent" data-aos="fade-up">
+                Building Chatbots with Hugging Face
+            </h1>
+            <div class="grid md:grid-cols-2 gap-8 max-w-7xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                <!-- Document Section with Grade -->
+                <div>
+                    <h2 class="text-3xl font-bold mb-6 flex items-center justify-between">
+                        <span class="bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">
+                            Document
+                        </span>
+                        <span class="flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 hover:bg-white/10 transition-colors">
+                            <svg class="w-5 h-5 text-pink-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <span class="text-xl text-gray-300">Grade: <span class="text-pink-400 font-semibold">N/A</span></span>
+                        </span>
+                    </h2>
+                    <div class="gradient-border p-0.5 rounded-2xl" data-aos="fade-right">
+                        <div class="bg-gray-900 p-2 rounded-2xl">
+                            <iframe 
+                                src="https://docs.google.com/document/d/1fKqBXm5KQv33wzLAhOsb9fwwkVynTJRB/preview" 
+                                class="w-full h-[800px] md:h-[700px] lg:h-[800px] rounded-xl"
+                                frameborder="0"
+                                allowfullscreen
+                                style="zoom: 0.75;"
+                            ></iframe>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Personal Reflection -->
+                <div>
+                    <h2 class="text-2xl font-bold mb-6 text-pink-400">Personal Reflection</h2>
+                    <div class="bg-gray-800/30 p-8 rounded-lg border border-white/10">
+                        <div class="space-y-4 text-gray-300">
+                            <p>We dived into Hugging Face's models immediately. It was both fun and highly educational. As much as we explored some models, the Qwen Qwen 72B parameter caught our attention the most. Truly, it felt game-changing-it was a true monster in terms of text processing. Its response abilities to provide precise and refined results were far beyond anything I would have thought.
+
+                                Experimenting with the model was a unique learning experience. It was pushing its boundaries and testing how it handled complex and challenging queries, and it made me realize just how advanced AI has become. It wasn't about seeing what the model could do but about understanding its capabilities and limitations and the incredible potential these tools have in transforming the way we interact with technology.
+                                
+                                Looking back, this hands-on task has taught me so much more than theory ever could. It was a reflection of how far AI has come—and how much there is still to learn.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jupyter Notebook Section -->
+    <section class="py-16 px-6">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-red-400 to-pink-400 bg-clip-text text-transparent" data-aos="fade-up">
+                Jupyter Notebook
+            </h2>
+            <div class="gradient-border p-0.5 rounded-2xl max-w-5xl mx-auto" data-aos="fade-up">
+                <div class="bg-gray-900 p-2 rounded-2xl">
+                    <a href="https://drive.google.com/file/d/1ki_YZtBQOD-pBrkiGW90_FEPkMzr4APk/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                        <img src="uploads/e7.png" alt="Jupyter Notebook" class="w-full rounded-xl hover:opacity-90 transition-opacity">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results and Evaluation Section -->
+    <section class="py-16 px-6 bg-black/30">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-red-400 to-pink-400 bg-clip-text text-transparent" data-aos="fade-up">
+                Results and Evaluation
+            </h2>
+            <div class="gradient-border p-0.5 rounded-2xl max-w-5xl mx-auto" data-aos="fade-up">
+                <div class="bg-gray-900 p-2 rounded-2xl">
+                    <iframe 
+                        src="https://docs.google.com/spreadsheets/d/1xYJWXleOHseWEi9I5nM3BvmSYYi1FL_1/preview"
+                        class="w-full h-[600px] rounded-xl"
+                        frameborder="0"
+                        allowfullscreen
+                    ></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Peer Reviews Section -->
+    <section class="py-20 px-6 bg-black/30">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-red-400 to-pink-400 bg-clip-text text-transparent" data-aos="fade-up">
+                Peer Reviews
+            </h2>
+            <div class="max-w-4xl mx-auto space-y-8">
+                <!-- Review 1 -->
+                <div class="gradient-border p-0.5 rounded-2xl" data-aos="fade-up">
+                    <div class="bg-gray-900 p-6 rounded-2xl">
+                        <div class="bg-white/5 p-6 rounded-lg border border-white/10">
+                            <p class="text-gray-300 leading-relaxed">
+                                Mr. Manabat's paper is somehow informative but lacks figures or images of code snippets. In addition, the label of his figures is on the upper part of the actual figures; it is supposed to be beneath it. The organization of the results display is excellent. He also created and showed a table for the questions that he used to accomplish his activity. Overall, his work is simple yet easy to understand. There are some lacks, such as images for the results and code snippets for the answer part of the models.
+                            </p>
+                            <p class="text-red-400 mt-4 text-sm italic">- Anonymous User, Nov 27 at 9:50pm</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="gradient-border p-0.5 rounded-2xl" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-gray-900 p-6 rounded-2xl">
+                        <div class="bg-white/5 p-6 rounded-lg border border-white/10">
+                            <p class="text-gray-300 leading-relaxed">
+                                Mr. Manabat's work sum ups highlighting the performance of the models and he has a well defined question categories dividing the questions into a assessment, simple and complex categories it provides a good framework for evaluating. It organize and allows for the targeted analysis of the models strengths and its weaknesses. But the abstract and the introduction he did not explain why those models from the huggingface are chosen for the evaluation I think including a selection criteria can provide a clarity at some point, and I think by extending some discussions to include on how AI chatbot can help other users on other industries and also include a brief mention on how the study could impact the real world application. Overall the work of Mr. Manabat gives a good evaluation of the huggingface models using a systematic approach on how to assess a conversational of the AI performance.
+                            </p>
+                            <p class="text-red-400 mt-4 text-sm italic">- Anonymous User, Dec 3 at 7:41pm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black/30 py-8">
+        <div class="container mx-auto px-6 text-center text-gray-400">
+            <p>&copy; 2024 Lorenzo. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+    </script>
+</body>
+</html> 
