@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 9 - Research Methodology - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style>
+        .gradient-border {
+            position: relative;
+            background: linear-gradient(60deg, #ff4d4d, #f73859, #ff8a5c, #ea4c89, #c56cf0);
+            background-size: 300% 300%;
+            animation: gradientBorder 12s ease infinite;
+        }
+
+        @keyframes gradientBorder {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-black/10 backdrop-blur-md border-b border-white/10 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-3xl font-bold bg-gradient-to-r from-red-600 to-pink-600 bg-clip-text text-transparent">Lorenzo</a>
+                <div class="flex space-x-8">
+                    <a href="finals.html" class="hover:text-red-400 transition-colors">Back to Finals</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-16 px-6">
+        <div class="container mx-auto">
+            <h1 class="text-6xl font-bold text-center mb-8 bg-gradient-to-r from-red-400 via-pink-400 to-orange-400 bg-clip-text text-transparent" data-aos="fade-up">
+                Building Chatbots with Hugging Face
+            </h1>
+            <div class="grid md:grid-cols-2 gap-8 max-w-7xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                <!-- Document Section with Grade -->
+                <div>
+                    <h2 class="text-3xl font-bold mb-6 flex items-center justify-between">
+                        <span class="bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">
+                            Document
+                        </span>
+                        <span class="flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 hover:bg-white/10 transition-colors">
+                            <svg class="w-5 h-5 text-pink-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <span class="text-xl text-gray-300">Grade: <span class="text-pink-400 font-semibold">N/A</span></span>
+                        </span>
+                    </h2>
+                    <div class="gradient-border p-0.5 rounded-2xl" data-aos="fade-right">
+                        <div class="bg-gray-900 p-2 rounded-2xl">
+                            <iframe 
+                                src="https://docs.google.com/document/d/1Di9GFHFptAqf-OOmIrFDcSby751nyvY-/preview" 
+                                class="w-full h-[800px] md:h-[700px] lg:h-[800px] rounded-xl"
+                                frameborder="0"
+                                allowfullscreen
+                                style="zoom: 0.75;"
+                            ></iframe>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Personal Reflection -->
+                <div>
+                    <h2 class="text-2xl font-bold mb-6 text-pink-400">Personal Reflection</h2>
+                    <div class="bg-gray-800/30 p-8 rounded-lg border border-white/10">
+                        <div class="space-y-4 text-gray-300">
+                            <p>I went on the model specialism in this section of the project, outlining every step of the procedure—from choosing the models to optimizing them for our particular use case. In order to achieve our goals, I started by finding pre-trained models that were suitable for tasks like content creation, text categorization, and summarization, like <strong>T5-large</strong>, <strong>DistilBERT</strong>, and <strong>Facebook CNN</strong>. Each model was selected based on how well it performed tasks involving natural language processing.
+
+                                I then described the fine-tuning procedure, which included getting the dataset ready, modifying hyperparameters, and maximizing performance in accordance with the needs of our study. In order to verify the models' efficacy, I also provided procedures for assessing them using metrics including accuracy, loss, and BLEU scores. In addition to making implementation easier, this thorough methodology made guaranteed that every model was customized to meet our research goals. It was a fruitful and enlightening process.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Presentation Section -->
+    <section class="py-16 px-6">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-red-400 to-pink-400 bg-clip-text text-transparent" data-aos="fade-up">
+                Presentation
+            </h2>
+            <div class="gradient-border p-0.5 rounded-2xl max-w-5xl mx-auto" data-aos="fade-up">
+                <div class="bg-gray-900 p-2 rounded-2xl">
+                    <iframe 
+                        src="https://docs.google.com/presentation/d/1_dehnvoGt_5kh6djfcfdfyDSIs_O1QHO/preview"
+                        class="w-full h-[600px] rounded-xl"
+                        frameborder="0"
+                        allowfullscreen
+                    ></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="bg-black/30 py-8">
+        <div class="container mx-auto px-6 text-center text-gray-400">
+            <p>&copy; 2024 Lorenzo. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+    </script>
+</body>
+</html> 
